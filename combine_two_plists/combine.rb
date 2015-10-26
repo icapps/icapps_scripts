@@ -28,5 +28,8 @@ end
 
 # Write the new plist file
 File.open(ARGV[1], 'w') { |file|
-	file.write(CGI::unescapeHTML(result.to_plist.gsub /&amp;/, "&"))
+	file.write(result.to_plist.gsub /&amp;/, "&")
 }
+
+# Print Success
+puts "Combine: Success"
