@@ -45,9 +45,9 @@ version.delete!("\n")
 build.delete!("\n")
 version = "#{version}(#{build})"
 
-puts "Badging icons with #{version}"
-puts "Badging icons with #{background_color} as background"
-puts "Badging icons with #{fill_color} as fill"
+puts "[Verbose] Badging icons with #{version}"
+puts "[Verbose] Badging icons with #{background_color} as background"
+puts "[Verbose] Badging icons with #{fill_color} as fill"
 
 # Define the path to the icon asset catalog and parse the Contents.json file.
 name = "Document Viewer"
@@ -57,8 +57,8 @@ end
 contents_file = "#{appiconset}/Contents.json"
 xcassets = JSON.parse(IO.read(contents_file))
 
-puts "Source path: #{appiconset}"
-puts "Target path: #{target_path}"
+puts "[Verbose] Source path: #{appiconset}"
+puts "[Verbose] Target path: #{target_path}"
 
 # Loop through all icons present in the asset catalog.
 for asset in xcassets["images"]
