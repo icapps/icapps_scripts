@@ -1,13 +1,15 @@
 require 'nokogiri'
 require 'plist'
+require 'colorize'
 
 # Dictonary to hold the new generate plist file
 dict = Hash.new
 # Variable to hold the last extracted key
 latestKey = ""
 
-# Read the generated plist file
-Nokogiri::XML(File.open(ARGV[0])).xpath("//dict/*[self::key or self::string]").each do | key |
+# Read the generated plist files
+(0..(ARGV.count-2)).each do |i|
+	Nokogiri::XML(File.open(ARGV[i])).xpath("//dict/*[self::key or self::string]").each do | key |
 		key_string = key.to_s
 		if key_string.include? "<key>"
 			key_string.slice! "<key>"
@@ -18,6 +20,7 @@ Nokogiri::XML(File.open(ARGV[0])).xpath("//dict/*[self::key or self::string]").e
 			key_string.slice! "</string>"
 			dict[latestKey] = key_string
 		end
+	end
 end
 
 # Merge the two files together
@@ -27,9 +30,9 @@ dict.each do |key, value|
 end
 
 # Write the new plist file
-File.open(ARGV[1], 'w') { |file|
+File.open(ARGV.last, 'w') { |file|
 	file.write(result.to_plist.gsub /&amp;/, "&")
 }
 
 # Print Success
-puts "Combine: Success"
+puts "[INFO] Combine: Success".colorize(:green)
