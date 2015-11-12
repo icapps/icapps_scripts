@@ -30,6 +30,7 @@ You can s the following arguments:
 ## Contributors
 
 [Jelle Vandebeeck](https://github.com/fousa)
+</br>
 [Dylan Gyesbreghs](https://github.com/dylangyesbreghs)
 
 ## License
