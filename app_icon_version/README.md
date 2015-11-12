@@ -27,7 +27,7 @@ You can supply the following arguments:
 
 #### Example
 
-<pre><code>"${SRCROOT}/Script/app_icon_version.rb" 717D8C black </code></pre>
+<pre><code>"${SRCROOT}/app_icon_version.rb" 717D8C black </code></pre>
 
 ## Contributors
 
