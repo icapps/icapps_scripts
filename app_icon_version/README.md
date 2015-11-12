@@ -18,10 +18,12 @@ Then you have to add a new "Run Script Phase", complete it with the following co
 
 ### Arguments
 
-You can s the following arguments:
+You can supply the following arguments:
 
  * Background Color -> First argument
  * Fill Color (Text) -> Second argument
+
+(If you don't supply any arguments the defaults are being used.)
 
 #### Example
 
