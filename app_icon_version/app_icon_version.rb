@@ -35,9 +35,6 @@ if fill_color =~ /\d/
     fill_color = "#" + fill_color
 end
 
-puts background_color
-puts fill_color
-
 #appIcon = "AppIcon-#{configuration}"
 appIcon = "AppIcon"
 
@@ -49,6 +46,8 @@ build.delete!("\n")
 version = "#{version}(#{build})"
 
 puts "Badging icons with #{version}"
+puts "Badging icons with #{background_color} as background"
+puts "Badging icons with #{fill_color} as fill"
 
 # Define the path to the icon asset catalog and parse the Contents.json file.
 name = "Document Viewer"
