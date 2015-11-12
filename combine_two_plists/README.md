@@ -7,8 +7,8 @@ You can use the following script to combine or merge two different plist files.
 Just run the following commands
 <pre><code>
 (sudo) gem install plist
-git clone git@github.com:icapps/icapps_scripts.git
-cd icapps_scripts
+git clone git@github.com:icapps/scripts.git
+cd scripts
 ruby combine.rb file_one.plist file_two.plist
 </code></pre>
 
