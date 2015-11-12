@@ -4,7 +4,7 @@ You can use the following script to combine or merge multiple (different) plist 
 
 ## Usage
 
-Just run the following commands
+Just run the following commands (the last argument is your output file).
 <pre><code>
 (sudo) gem install plist
 git clone git@github.com:icapps/scripts.git
@@ -12,7 +12,7 @@ cd scripts/combine_plists
 ruby combine.rb file_one.plist file_two.plist output.plist
 </code></pre>
 
-### Example
+## Example
 
 #### File One
 ```xml
