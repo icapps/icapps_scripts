@@ -4,36 +4,16 @@ You can use the following script to add info to your Settings.
 
 ## Usage
 
-### Installation
-
-You need to install the following gem's.
-<pre><code>(sudo) gem install imagemagick
-(sudo) gem install gs
-</code></pre>
+### Usage
 
 First you need to drag the following script into your project, and make sure it's in the root of your folder.
 Then you have to add a new "Run Script Phase", complete it with the following command.
 
-<pre><code>"${SRCROOT}/Script/app_icon_version.rb"</code></pre>
-
-### Arguments
-
-You can supply the following arguments:
-
- * Background Color -> First argument
- * Fill Color (Text) -> Second argument
-
-(If you don't supply any arguments the defaults are being used.)
-
-#### Example
-
-<pre><code>"${SRCROOT}/app_icon_version.rb" 717D8C black </code></pre>
+<pre><code>"${SRCROOT}/Script/settings_version.rb"</code></pre>
 
 ## Contributors
 
 [Jelle Vandebeeck](https://github.com/fousa)
-</br>
-[Dylan Gyesbreghs](https://github.com/dylangyesbreghs)
 
 ## License
 
