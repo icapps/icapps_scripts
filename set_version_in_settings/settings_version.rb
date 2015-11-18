@@ -1,7 +1,5 @@
 #!/usr/bin/ruby
 
-require 'xcodeproj'
-
 plist = ENV['PRODUCT_SETTINGS_PATH']
 settings = "#{ENV['PROJECT_DIR']}/#{ENV['PROJECT_NAME']}/Settings.bundle/Root.plist"
 
