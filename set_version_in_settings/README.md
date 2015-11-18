@@ -4,8 +4,6 @@ You can use the following script to add info to your Settings.
 
 ## Usage
 
-### Usage
-
 First you need to drag the following script into your project, and make sure it's in the root of your folder.
 Then you have to add a new "Run Script Phase", complete it with the following command.
 
