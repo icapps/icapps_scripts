@@ -2,6 +2,12 @@
 
 Under construction
 
+## Scripts
+
+[App Icon Versions](app_icon_version/README.md)
+[Combine Plists](combine_plists/README.md)
+[Set version in Settings](set_version_in_settings/README.md)
+
 ## Contributors
 
 [Jelle Vandebeeck](https://github.com/fousa)
