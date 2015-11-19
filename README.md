@@ -4,11 +4,11 @@ Under construction
 
 ## Scripts
 
-[App Icon Versions](app_icon_version/README.md)
+[App Icon Versions](app_icon_version/)
 <br />
-[Combine Plists](combine_plists/README.md)
+[Combine Plists](combine_plists/)
 <br />
-[Set version in Settings](set_version_in_settings/README.md)
+[Set version in Settings](set_version_in_settings/)
 <br />
 
 ## Contributors
