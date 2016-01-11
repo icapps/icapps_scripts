@@ -21,24 +21,9 @@ Sometimes there are archives (for apps you upload to the App Store) that you don
 
 When running the script you'll get an overview of the archive's identifiers that will be deleted.
 
-### Arguments
-
-You can supply the following arguments:
-
- * Background Color -> First argument
- * Fill Color (Text) -> Second argument
-
-(If you don't supply any arguments the defaults are being used.)
-
-#### Example
-
-<pre><code>"${SRCROOT}/app_icon_version.rb" 717D8C black </code></pre>
-
 ## Contributors
 
 [Jelle Vandebeeck](https://github.com/fousa)
-</br>
-[Dylan Gyesbreghs](https://github.com/dylangyesbreghs)
 
 ## License
 

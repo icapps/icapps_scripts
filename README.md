@@ -4,18 +4,17 @@ Under construction
 
 ## Scripts
 
-[App Icon Versions](app_icon_version/)
-<br />
-[Combine Plists](combine_plists/)
-<br />
-[Set version in Settings](set_version_in_settings/)
-<br />
+Here is a list of available scripts:
+
+- [Add a version to the application icon.](app_icon_version/)
+- [Combine plists](combine_plists/)
+- [Cleanup your Xcode archives](cleanup/)
+- [Set the version number in the Settings bundle.](set_version_in_settings/)
 
 ## Contributors
 
-[Jelle Vandebeeck](https://github.com/fousa)
-</br>
-[Dylan Gyesbreghs](https://github.com/dylangyesbreghs)
+- [Jelle Vandebeeck](https://github.com/fousa)
+- [Dylan Gyesbreghs](https://github.com/dylangyesbreghs)
 
 
 ## License
