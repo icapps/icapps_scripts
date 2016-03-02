@@ -1,36 +1,38 @@
-# iCapps Scripts
+# App Icon
 
-Under construction
+You can use the following script to add the version number to your App Icon.
 
-## Scripts
+## Usage
 
-Here is a list of available scripts:
+### Installation
 
-### iOS
+First you need to drag the following script into your project, and make sure it's in the root of your folder.
+Then you have to add a new "Run Script Phase", complete it with the following command.
 
-- [Add a version to the application icon.](ruby/app_icon_version/)
-- [Set the version number in the Settings bundle.](ruby/set_version_in_settings/)
-- [Cleanup your Xcode archives](ruby/cleanup/)
-- [Combine plists](ruby/combine_plists/)
+<pre><code>"${SRCROOT}/AppIcon.swift"</code></pre>
 
-### Swift
+### Arguments
 
-The scripts are written in **Swift**.
+You can supply the following arguments:
 
-- [Add a version to the application icon.](swift/AppIcon/)
-- [Set the version number in the Settings bundle.](swift/SettingsVersion/)
+ * Background Color -> First argument
+ * Fill Color (Text) -> Second argument
+
+(If you don't supply any arguments the defaults are being used.)
+
+#### Example
+
+<pre><code>"${SRCROOT}/AppIcon.swift"" 717D8C black </code></pre>
 
 ## Contributors
 
-- [Jelle Vandebeeck](https://github.com/fousa)
-- [Dylan Gyesbreghs](https://github.com/dylangyesbreghs)
-
+[Dylan Gyesbreghs](https://github.com/dylangyesbreghs)
 
 ## License
 
 The MIT License (MIT)
 
-Copyright (c) 2015-2016 iCapps
+Copyright (c) 2015 iCapps
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
