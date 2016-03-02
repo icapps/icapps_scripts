@@ -30,7 +30,7 @@ The scripts are written in **Swift**.
 
 The MIT License (MIT)
 
-Copyright (c) 2015 iCapps
+Copyright (c) 2015-2016 iCapps
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
