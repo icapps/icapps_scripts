@@ -6,10 +6,19 @@ Under construction
 
 Here is a list of available scripts:
 
-- [Add a version to the application icon.](app_icon_version/)
-- [Combine plists](combine_plists/)
-- [Cleanup your Xcode archives](cleanup/)
-- [Set the version number in the Settings bundle.](set_version_in_settings/)
+### iOS
+
+- [Add a version to the application icon.](ruby/app_icon_version/)
+- [Set the version number in the Settings bundle.](ruby/set_version_in_settings/)
+- [Cleanup your Xcode archives](ruby/cleanup/)
+- [Combine plists](ruby/combine_plists/)
+
+### Swift
+
+The scripts are written in **Swift**.
+
+- [Add a version to the application icon.](swift/AppIcon.swift)
+- [Set the version number in the Settings bundle.](swift/SettingsVersion.swift)
 
 ## Contributors
 
