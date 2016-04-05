@@ -45,7 +45,7 @@ fi
 # Log the shell command in the console and run it afterwards.
 function run {
   echo $1
-  `$1`
+  $1
 }
 
 # Setup it the git remote exists. If not create the remote for the
