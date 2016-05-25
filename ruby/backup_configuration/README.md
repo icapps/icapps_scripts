@@ -1,45 +1,31 @@
-# iCapps Scripts
+# Backup Jenkins Configuration
 
-Under construction
+You can use the following script to backup the Jenkins configuration files for all the jobs.
 
-## Scripts
+## Installation
 
-Here is a list of available scripts:
+Clone this repository to your drive.
 
-### Bash
+    git clone git@github.com:icapps/scripts.git scripts
 
-Plain old _Shell_ scripts.
 
-- [Deploy to Heroku.](bash/deploy/)
+**Done!**
 
-### Ruby
+## Archives
 
-The scripts are written in **Ruby**.
+Cleanup you archives with the following command from the project root:
 
-- [Add a version to the application icon.](ruby/app_icon_version/)
-- [Backup Jenkins Configuration](ruby/backup_configuration/)
-- [Set the version number in the Settings bundle.](ruby/set_version_in_settings/)
-- [Cleanup your Xcode archives](ruby/cleanup/)
-- [Combine plists](ruby/combine_plists/)
-
-### Swift
-
-The scripts are written in **Swift**.
-
-- [Add a version to the application icon.](swift/AppIcon/)
-- [Set the version number in the Settings bundle.](swift/SettingsVersion/)
+    $ ./scripts/backup_configuration.rb /backup_folder_path /dropbox_backup_folder_path
 
 ## Contributors
 
-- [Jelle Vandebeeck](https://github.com/fousa)
-- [Dylan Gyesbreghs](https://github.com/dylangyesbreghs)
-
+[Jelle Vandebeeck](https://github.com/fousa)
 
 ## License
 
 The MIT License (MIT)
 
-Copyright (c) 2015-2016 iCapps
+Copyright (c) 2015 iCapps
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
