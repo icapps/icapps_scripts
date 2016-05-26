@@ -18,6 +18,7 @@ The scripts are written in **Ruby**.
 
 - [Add a version to the application icon.](ruby/app_icon_version/)
 - [Backup Jenkins Configuration](ruby/backup_configuration/)
+- [Generate Apteligent OAuth token](ruby/generate_apteligent_token/)
 - [Set the version number in the Settings bundle.](ruby/set_version_in_settings/)
 - [Cleanup your Xcode archives](ruby/cleanup/)
 - [Combine plists](ruby/combine_plists/)
