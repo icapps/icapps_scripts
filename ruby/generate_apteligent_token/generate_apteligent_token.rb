@@ -1,6 +1,6 @@
 #!/usr/bin/ruby
 
-require 'uri'
+require 'cgi'
 require 'json'
 require 'colorize'
 require 'highline/import'
@@ -27,8 +27,8 @@ def curl_command(username, password, client_id, app_id, secure=true)
   curl_command = "curl -X POST #{url}"
   curl_command << " -u #{client_id}"
   curl_command << " -d 'grant_type=password&"
-  curl_command << "username=#{URI.escape(username)}&"
-  curl_command << "password=#{secure ? '********' : URI.escape(password)}&"
+  curl_command << "username=#{CGI.escape(username)}&"
+  curl_command << "password=#{secure ? '********' : CGI.escape(password)}&"
   curl_command << "scope=app%2F#{app_id}%2Fsymbols&"
   curl_command << "duration=31536000'"
   curl_command
@@ -42,20 +42,22 @@ def perform_curl(username, password, client_id, app_id)
 end
 
 ### Ask the user to enter it's username.
-username = ask_input '1. Enter your Apteligen username: '.green
+username = ask_input '1. Enter your Apteligent email: '.green
 stop("Username '#{username}' is invalid.") if username.empty?
 
 ### Ask the user to enter it's oauth client id.
-client_id = ask_input '2. Enter your Apteligen OAuth client id: '.green
+puts "Go to user-settings > OAuth Tokens > Your OAuth Client ID".white
+client_id = ask_input '2. Enter your Apteligent OAuth client id: '.green
 stop("OAuth client id '#{client_id}' is invalid.") if client_id.empty?
 
 ### Ask the user to enter it's password id.
-password = ask_input '3. Enter your Apteligen password [hidden]: '.green, true
+password = ask_input '3. Enter your Apteligent password [hidden]: '.green, true
 stop("Password '#{password}' is invalid.") if password.empty?
 
 ### Ask the user to enter it applicable application id.
-app_id = ask_input '4. Enter the Apteligen Application id: '.green
-stop("Application id '#{app_id}' is invalid.") if app_id.empty?
+puts "Go to Jump to ... > Your app > app settings > Basics".white
+app_id = ask_input '4. Enter the Apteligent Application App ID: '.green
+stop("Application App ID'#{app_id}' is invalid.") if app_id.empty?
 
 ### Perform the curl command
 result = perform_curl username, password, client_id, app_id
