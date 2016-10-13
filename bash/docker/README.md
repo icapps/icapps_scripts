@@ -1,48 +1,43 @@
-# iCapps Scripts
+# Build in docker and deploy to Heroku
 
-Under construction
+You can use the following script to build the web project using docker and to deploy it to Heroku.
 
-## Scripts
+## Installation
 
-Here is a list of available scripts:
+Clone this repository to your drive.
 
-### Bash
+    git clone git@github.com:icapps/scripts.git scripts
 
-Plain old _Shell_ scripts.
 
-- [Deploy to Heroku.](bash/deploy/)
-- [Deploy to Heroku while building on Docker](bash/docker/)
+**Done!**
 
-### Ruby
+## Run
 
-The scripts are written in **Ruby**.
+Run one of the following commands from the repository root:
 
-- [Add a version to the application icon.](ruby/app_icon_version/)
-- [Backup Jenkins Configuration](ruby/backup_configuration/)
-- [Generate Apteligent OAuth token](ruby/generate_apteligent_token/)
-- [Set the version number in the Settings bundle.](ruby/set_version_in_settings/)
-- [Cleanup your Xcode archives](ruby/cleanup/)
-- [Combine plists](ruby/combine_plists/)
+    $ ./scripts/docker.sh develop
+    $ ./scripts/docker.sh staging
+    $ ./scripts/docker.sh production
 
-### Swift
+## What will happen?
 
-The scripts are written in **Swift**.
+This is what is going to happen:
 
-- [Add a version to the application icon.](swift/AppIcon/)
-- [Set the version number in the Settings bundle.](swift/SettingsVersion/)
+- A remote will be added in git if needed.
+- We build the project using a Docker image provided in the project source code.
+- The built image will be pushed to Heroku where it will be deployed.
+- When the build version is updated we tag the current commit and push this change to the origin.
 
 ## Contributors
 
-- [Jelle Vandebeeck](https://github.com/fousa)
-- [Dylan Gyesbreghs](https://github.com/dylangyesbreghs)
-- [Maarten Anckaert](https://github.com/MaartenAnckaert)
-
+[Jelle Vandebeeck](https://github.com/fousa)
+[Maarten Anckaert](https://github.com/MaartenAnckaert)
 
 ## License
 
 The MIT License (MIT)
 
-Copyright (c) 2015-2016 iCapps
+Copyright (c) 2016 iCapps
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
