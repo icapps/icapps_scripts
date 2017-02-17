@@ -6,6 +6,13 @@ Under construction
 
 Here is a list of available scripts:
 
+### AppleScript
+
+Some usefull AppleScript scripts.
+
+- [Open Provisioning files when dragged inside a
+  folder](applescript/provisioning)
+
 ### Bash
 
 Plain old _Shell_ scripts.
